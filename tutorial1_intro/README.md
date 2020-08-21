@@ -34,10 +34,10 @@ To receive full credit, you must post your stable path before the start of the n
 
 ## Required Reading: 
 
-- [ ] [Interneting Is Hard: Introduction, Basic Web Pages, Links and Images](https://www.internetingishard.com/html-and-css/) 
-- [ ] [Javascript.info: Getting Started](https://javascript.info/getting-started)
-- [ ] [Javascript.info: Debugging Chrome](https://javascript.info/debugging-chrome)
-- [ ] [D3: Data-Driven Documents](http://vis.stanford.edu/files/2011-D3-InfoVis.pdf)
+- [ ] [Serial Mentor: Directory of Visualizations](https://serialmentor.com/dataviz/directory-of-visualizations.html)
+- [ ] [O'Reilly: Binding Data](https://alignedleft.com/tutorials/d3/binding-data)
+- [ ] [O'Reilly: Chaining Methods](https://alignedleft.com/tutorials/d3/chaining-methods)
+- [ ] [JS Fundamentals: Variables](https://javascript.info/variables)
 
 ## Other Resources:
 
@@ -45,3 +45,7 @@ To receive full credit, you must post your stable path before the start of the n
 - [Javascript Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics) (We recommend that you get comfortable with everyhing up to the 'What is "this"?' section)
 - [How to use github](https://git-scm.com/book/en/v2)
 - [Guide to CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+- [Interneting Is Hard](https://www.internetingishard.com/html-and-css/) 
+- [Javascript.info: Getting Started](https://javascript.info/getting-started)
+- [Javascript.info: Debugging Chrome](https://javascript.info/debugging-chrome)
+- [D3: Data-Driven Documents](http://vis.stanford.edu/files/2011-D3-InfoVis.pdf)
