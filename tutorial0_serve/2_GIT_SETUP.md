@@ -14,11 +14,9 @@ You will now have a copy of the course repository on your own github account. Fo
 
 ### 3. Set up your deployment
 
-To deploy your site on [Github Pages](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site) you can go to your repository's `Settings` tab and then scroll down to `GitHub Pages` section. Select `master branch` as source and then your site will be avallable at `https://<user>.github.io/<repository>/`
+To deploy your site on [Github Pages](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site) you can go to your repository's `Settings` tab and then scroll down to `GitHub Pages` section. Select `master` as source and then your site will be avallable at `https://<user>.github.io/<repository>/`
 
 <img src='./lib/assets/pages.png' width='500px'>
-
-**That's it! Now you are ready to create, update, and deploy your own websites 🎉!**
 
 ### 4. On GitHub, navigate to **your fork** of the repository and clone it to your local computer.
 
@@ -101,3 +99,5 @@ When you are ready to push up your code to your remote repository, you can run:
 ```sh
 $ git push
 ```
+
+**That's it! Now you are ready to create, update, and deploy your own websites 🎉!**
