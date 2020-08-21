@@ -6,17 +6,19 @@ You can read more about forking, syncing, and our overall github flow [here](htt
 
 ### 2. Fork this repository into your own account.
 
-<img src='./lib/assets/fork.png' width='700px'>
+To do this, click on the "fork" button on the top right of this github account.
 
-You will now have a copy of the course repository on your own github account. For example:
+<img src='../lib/assets/fork.png' width='700px'>
 
-<img src='./lib/assets/forked.png' width='700px'>
+You will now have a copy of the course repository on your own github account. You can see this worked by confirming your github username appears before the repository name:
+
+<img src='../lib/assets/forked.png' width='700px'>
 
 ### 3. Set up your deployment
 
 To deploy your site on [Github Pages](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site) you can go to your repository's `Settings` tab and then scroll down to `GitHub Pages` section. Select `master` as source and then your site will be avallable at `https://<user>.github.io/<repository>/`
 
-<img src='./lib/assets/pages.png' width='500px'>
+<img src='../lib/assets/pages.png' width='500px'>
 
 ### 4. On GitHub, navigate to **your fork** of the repository and clone it to your local computer.
 
