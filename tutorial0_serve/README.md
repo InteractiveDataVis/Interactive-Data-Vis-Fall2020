@@ -6,15 +6,15 @@ The goals for this tutorial are:
 
 - to set up installations for your [local development environment](./1_INSTALL.md)
 - to get comfortable with the [Github workflow](./2_GIT_SETUP.md)
-- to [serve](./3_BASIC_SERVER.md) for the first time
+- to learn how to [serve](./3_BASIC_SERVER.md) your pages so that you can see/interact with them while you are coding
 
 ## Week 0 Assignment:
 
-- [ ] Replicate tihs environment on your own computer. You should leverage the files present in the root of this directory in your repository (`tutorial0_serve/` [index.html](index.html), [style.css](style.css), [main.js](main.js))
+- [ ] Replicate this environment on your own computer. You should leverage the files present in the root of this directory in your repository (`tutorial0_serve/` [index.html](index.html), [style.css](style.css), [main.js](main.js))
    1. First, confirm you have all the [installations](./1_INSTALL.md) on your machine. If you have no errors, proceed to the next step. 
-   2. With your github username, fork this repository and follow the [github workflow](./2_GIT_SETUP.md) 
+   2. While logged in to your github username, follow the [github workflow](./2_GIT_SETUP.md) to fork this repository into your own account.
    3. Ensure that you can [serve](./3_BASIC_SERVER.md) locally. 
-- [ ] Using your local server, update the language in the console log. Pick anything at all -- but it should be different than 'Hello World!' to show that your javascrip code changes are connected to your site. You should see this in the inspector of your local serve. 
+- [ ] Using your local server, update the language in the console log. Pick anything at all -- but it should be different than 'Hello World!' to show that your javascript code changes are connected to your site. You should see this in the browser inspector of your local serve. 
 - [ ] Push these changes up to your forked repository. You should see your commit and any code changes in the github repo. 
 - [ ] Post your code and deployed links to the Tutorial 1 post on the Commons.
 
