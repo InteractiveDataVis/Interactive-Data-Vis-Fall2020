@@ -9,9 +9,11 @@ The goals for this tutorial are:
 
 ### Deploy
 
-Once you've completed the assignment, use the Github workflow to deploy your work to **your fork** of the course repository. Post the link to your deployed example as a comment to the appropriate post on the Commons. (Note: your link will look something like: `https://[YOUR_USERNAME].github.io/Interactive-Data-Vis-Fall2020/[TUTORIAL_PATH]/`)
+Once you've completed the assignment, use the Github workflow to deploy your work to **your fork** of the course repository. Post the following as a comment to the appropriate post on the [commons site](https://data7320062268.commons.gc.cuny.edu):
+1. a link to your commited code repository (your link will look something like: `https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2020/[TUTORIAL_PATH]/`)
+2. a link to your deployed example (your link will look something like: `https://[YOUR_USERNAME].github.io/Interactive-Data-Vis-Fall2020/[TUTORIAL_PATH]/`)
 
-To receive full credit, you must post your stable path before the start of the next class.
+To receive full credit, you must post your stable path before the start of the next class. All tutorials are due on 10/28. 
 
 ## Week 1 Assignment:
 
@@ -20,7 +22,7 @@ To receive full credit, you must post your stable path before the start of the n
 
 **BONUS:**
 
-- [ ] Use the javascript file to explore the language. Console log any more interesting findings, such as the result of a function.
+- [ ] Use the javascript file to explore javascript syntax. Console log any more interesting findings, such as the result of a function.
 
 ## Required Reading: 
 
@@ -29,9 +31,7 @@ To receive full credit, you must post your stable path before the start of the n
 - [ ] [Javascript.info: Debugging Chrome](https://javascript.info/debugging-chrome)
 - [ ] [D3: Data-Driven Documents](http://vis.stanford.edu/files/2011-D3-InfoVis.pdf)
 
-## Resources:
+## Other Resources:
 
 - [Javascript Fundamentals](https://javascript.info/first-steps)
-- [Javascript Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics) (We recommend that you get comfortable with everyhing up to the 'What is "this"?' section)
 - [How to use github](https://git-scm.com/book/en/v2)
-- [Guide to CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
