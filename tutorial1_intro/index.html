@@ -10,25 +10,25 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="main.js"></script>
     <script>
-      d3.csv("PSAT_IGCSE_Scores_01.csv").then(function(data) {
+      d3.csv("PSAT_IGCSE_Scores_01.csv",function(data) {
   
-        console.log(data); // [{"Hello": "world"}, …]
-        const table = d3.select("#d3-table");
+//console.log(error);
+console.log(data);
 
-  const body = table.append('tbody').attr("id", "2")
+  //const body = table.append('tbody').attr("id", "2")
 
   // d3.select("d3-table")
   //   .append("tbody")
   //   .append("tr")
 
-  const rows = body.selectAll(".row")
+ /* const rows = body.selectAll(".row")
     .data(data)
     .join('tr')
     .attr('class', 'row')
 
   const cells = rows
     .append("td")
-    .text(d => d["Timestamp"])
+    .text(d => d["Timestamp"])*/
       });
     </script>
   </body>
