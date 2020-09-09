@@ -1,35 +1,145 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>Interactive Data Visualization Tutorial</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Dataset Fertility rate of USA and Spain between 1800 and 2000</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    th,td {
+      color: black;
+      font-family: verdana;
+      border: 1px solid black;
+    width: 7cm;
+    padding: 5px 25px 4px 25px;
+    }
+    th{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color:rgba(256,256,256,0.4);}
+   .highlight {
+     background: #55cfff;
+   }
+    td{border:0.5px solid gray;
+      font-family: Arial, Helvetica, sans-serif;
+    background:honeydew;}
+   .highlight {
+     background:#ff0;
+   }
+     tr{
+      color: red;
+      font-family: courier;
+      border: 1px solid black;
+    }
+    table {
+      border: 1px solid black;
+      scroll-behavior: smooth;
+      margin-left: auto;
+    margin-right: auto;
+      width:auto;
+      align-self: center;
+      display :inline-block;
+     margin-top: 1cm;
+}
+tbody {
+  font-family: Arial, Helvetica, sans-serif;
+    height: 300px;
+    display :inline-block;
+    overflow: auto;
+}
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color:gray;
+  margin-top: 1cm;
+}
+p{
+  font-family: arial;
+  color:gray;
+}
+    </style>•	   
+      
+      
   </head>
+ 
   <body>
-    Welcome to Interactive Data Visualization Tutorials
-    <table id="d3-table"></table>
+    <h1>Dataset Fertility rate of USA and Spain between 1800 and 2018</h1>
+    <p>In this DataSet , I tried to highlight only the fertility rate which are greater than 
+      and I tried to add a scroll 
+    </p>
+    <p>ps: I am new in the world of javascript 
+    </p>
+    <span id="val"></span>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="main.js"></script>
     <script>
-      d3.csv("PSAT_IGCSE_Scores_01.csv").then(function(data) {
+     // d3.csv("PSAT_IGCSE_Scores_01.csv").then(function(data) 
+   
+     var tabulate = function (data,columns) {
+  var table = d3.select('body').append('table').attr("class", "imagetable")
+	var thead = table.append('thead')
+	var tbody = table.append('tbody')
+
+  thead.append('tr')
+	  .selectAll('th')
+	    .data(columns)
+      .enter()
+	  .append('th')
+      .text(function (d) { return d })
+      
+	var rows = tbody.selectAll('tr')
+	    .data(data)
+	    .enter()
+	  .append('tr')
+
+	var cells = rows.selectAll('td')
+	    .data(function(row) {
+	    	return columns.map(function (column) {
+	    		return { column: column, value: row[column] }
+	      })
+      })
+      .enter()
+    .append('td')
+         .text(function (d) { return d.value })  
+  return table;
+}
+// Wait until the DOM is loaded
+window.addEventListener("DOMContentLoaded", function(){
+
+
+d3.csv("fertility.csv").then(function(data) {
+  console.log(data);
+  //var columns = ['ID',	'Country',	'psat_cr',	'psat_m',	'psat_w','psat_tot',	'igcse_lit'	,'igcse_fle','Igcse_m']
+  var columns = ['country',	'year',	'fertility_rate']
+        tabulate(data,columns)
+       // Get all the td elements in an array
+var theCells = document.getElementsByTagName("td");
+
+// Loop through each td
+
+for(var i = 0; i < theCells.length; ++i){
   
-//console.log(error);
-console.log(data);
-
-  //const body = table.append('tbody').attr("id", "2")
-
-  // d3.select("d3-table")
-  //   .append("tbody")
-  //   .append("tr")
-
- /* const rows = body.selectAll(".row")
-    .data(data)
-    .join('tr')
-    .attr('class', 'row')
-
-  const cells = rows
-    .append("td")
-    .text(d => d["Timestamp"])*/
-      });
+   // Set up a click event handler for the td
+  // theCells[i].addEventListener("click", function(){
+     if (theCells[i].innerText>6 && theCells[i].innerText<8 ){
+     // Check to see if the td has the class attribute applied already
+     if(theCells[i].getAttribute("class") === "highlight"){
+       // If so, remove it
+       theCells[i].removeAttribute("class");
+     } else {
+       // If not, add it
+      // theCells[i].setAttribute("class", "highlight"); 
+    theCells[i].setAttribute("class", "highlight"); 
+       
+     }
+    };
+}           
+});
+});
+var table = document.getElementsByTagName("table"), avgVal, sumVal = 0, 
+   rowCount = table.rows.length - 1;// minus the header
+            
+  for(var i = 1; i < table.rows.length; i++){
+     sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
+  }
+  document.getElementById("val").innerHTML = "Average Value = " + parseInt(sumVal / rowCount);
     </script>
   </body>
 </html>
