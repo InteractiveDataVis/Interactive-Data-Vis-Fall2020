@@ -104,7 +104,7 @@ p{
 window.addEventListener("DOMContentLoaded", function(){
 
 
-d3.csv("fertility.csv").then(function(data) {
+d3.csv("tutorial1_intro/fertility.csv").then(function(data) {
   console.log(data);
   //var columns = ['ID',	'Country',	'psat_cr',	'psat_m',	'psat_w','psat_tot',	'igcse_lit'	,'igcse_fle','Igcse_m']
   var columns = ['country',	'year',	'fertility_rate']
