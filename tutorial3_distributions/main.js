@@ -196,12 +196,9 @@ function draw() {
           exit
             .transition(t)
           //  .attr("r", radius*1.5)
-            // .delay(d => 50 * d.fertility_rate) 
+             .delay(d => 500 * d.fertility_rate) 
             //.duration(500)
             .attr("cx", d => margin.right) 
-           .attr('cx', function(d, i) { 
-            return i * 200;
-          })
             .attr("cy",  - margin.top) // try to exit by the top 
             .remove()
         )
