@@ -147,7 +147,7 @@ function draw() {
            .attr('cx', function(d, i) {
             return i * 200;
           })
-          .attr("cx", d => margin.left) 
+          .attr("cx", d => margin.right) 
            .attr("cy",  - margin.top)
           
          
@@ -174,8 +174,8 @@ function draw() {
           // update selections -- all data elements that match with a `.dot` element
           
           update
-          .data(filteredData, d => d.country) // has to add this since my data won t show up on github because of 
-                                               // error already late 
+          .data(filteredData, d => d.country) // had to add this since my data did not show up on github because of 
+                                               // error already late // need more explanation why we have to set the data again
             .transition(t) // duration is decalre in the beginning
             .attr("r", radius*2)
             .attr("stroke", "black")
@@ -208,7 +208,7 @@ function draw() {
             .duration(500)
             //.attr("cx", width)
             .attr("cx", d => margin.right) 
-
+            .attr("cy",  d => margin.top)
             .remove()
   
         )
