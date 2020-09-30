@@ -146,9 +146,10 @@ function draw() {
            .attr('cx', function(d, i) {
             return i * 200;
           })
-          .attr("cx", d => margin.right) 
-           .attr("cy",  - margin.bottom)
+          .attr("cx", d => margin.left) 
+           .attr("cy",  - margin.top)
           
+         
         //  .attr("cx", d => margin.right) // to return 
            // initial value - to be transitione
           .call(enter => // we work on enter because we want to animate the element when first , they enter in the page
@@ -180,7 +181,7 @@ function draw() {
             .attr("cx", d => margin.right) // how the dot will appear 
             .attr("cy",  - margin.top) // it will appear by the top  anf from the right to the left 
             .transition(t)
-            .attr("r", radius*3)
+            
             .attr("stroke", "lightgrey")
            .attr("cx", d => margin.right) 
            .attr('cx', function(d, i) {
@@ -191,11 +192,11 @@ function draw() {
         exit.call(exit =>
           // exit selections -- all the `.dot` element that no longer match to HTML elements
           // when we select only the spain , the one of united state should be removed from the DOM , so the .dot will be modified 
-          exit // how the dot will exit 
-            .transition(t) 
-            .attr("r", radius*3)
+          exit
+            .transition(t)
+            .attr("r", radius*1.5)
              .delay(d => 50 * d.fertility_rate) 
-            //.duration(500) // declare at the beginning 
+            //.duration(500)
             .attr("cx", d => margin.right) 
            .attr('cx', function(d, i) { 
             return i * 200;
