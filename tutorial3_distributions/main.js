@@ -194,13 +194,19 @@ function draw() {
           // exit selections -- all the `.dot` element that no longer match to HTML elements
           // when we select only the spain , the one of united state should be removed from the DOM , so the .dot will be modified 
           exit
-            .transition(t)
+            //.transition(t)
           //  .attr("r", radius*1.5)
-             .delay(d => 500 * d.fertility_rate) 
+            // .delay(d => 500 * d.fertility_rate) 
             //.duration(500)
-            .attr("cx", d => margin.right) 
-            .attr("cy",  - margin.top) // try to exit by the top 
+            //.attr("cx", d => margin.right) 
+           // .attr("cy",  - margin.top) // try to exit by the top 
+           // .remove()
+           .transition()
+            .delay(d => 50 * d.fertility_rate)
+            .duration(500)
+            .attr("cx", width)
             .remove()
+  
         )
     );
 }
