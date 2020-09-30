@@ -23,7 +23,8 @@ let state = {
 //t  initiate transition for all
 //ease-in-out - specifies a transition effect with a slow start and end 
 // i wanted to use easein out but it did not work 
-const t = d3.transition().duration(500);
+const t = d3.transition().duration(1000).ease(d3.easeLinear);
+;
 
 /**
  * LOAD DATA
@@ -194,8 +195,8 @@ function draw() {
           // when we select only the spain , the one of united state should be removed from the DOM , so the .dot will be modified 
           exit
             .transition(t)
-            .attr("r", radius*1.5)
-             .delay(d => 50 * d.fertility_rate) 
+          //  .attr("r", radius*1.5)
+            // .delay(d => 50 * d.fertility_rate) 
             //.duration(500)
             .attr("cx", d => margin.right) 
            .attr('cx', function(d, i) { 
