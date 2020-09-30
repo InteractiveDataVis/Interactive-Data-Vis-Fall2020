@@ -123,7 +123,7 @@ function draw() {
 
   const dot = svg
     .selectAll(".dot")
-    .data(filteredData, d => d.country) // use `d.name` as the `key` to match between HTML and data elements
+    .data(filteredData, d => d.country) // use `d.country` as the `key` to match between HTML and data elements
     .join(
       enter =>
         // enter selections -- all data elements that don't have a `.dot` element attached to them yet
@@ -157,7 +157,7 @@ function draw() {
             enter
             .transition(t) // initialize transition
             //.ease(d3.easein)
-            .delay(d => 500* d.fertility_rate-2000) // delay on each element
+            .delay(d => 500* d.fertility_rate) // delay on each element
                // duration 500ms
               //.attr("cy", d => yScale(d.fertility_rate))
               .attr("cx", d => margin.right) 
@@ -166,9 +166,7 @@ function draw() {
               })
               .attr("cx", d => xScale(d.year))
               .attr("cy", d => yScale(d.fertility_rate))
-              .attr(["cy", d3.max(state.data, d => d.fertility_rate)])
-              
-
+             // .attr(["cy", d3.max(state.data, d => d.fertility_rate)])
              
           ),
       update =>
@@ -176,11 +174,14 @@ function draw() {
           // update selections -- all data elements that match with a `.dot` element
           
           update
+          .data(filteredData, d => d.country) // has to add this since my data won t show up on github because of 
+                                               // error already late 
             .transition(t) // duration is decalre in the beginning
             .attr("r", radius*2)
             .attr("stroke", "black")
             .attr("cx", d => margin.right) // how the dot will appear 
             .attr("cy",  - margin.top) // it will appear by the top  anf from the right to the left 
+            //.data(filteredData, d => d.country)
             .transition(t)
             
             .attr("stroke", "lightgrey")
@@ -201,10 +202,13 @@ function draw() {
             //.attr("cx", d => margin.right) 
            // .attr("cy",  - margin.top) // try to exit by the top 
            // .remove()
+           //.data(filteredData, d => d.country) // has to add this since my data won t show up on github because of 
            .transition()
-            .delay(d => 50 * d.fertility_rate)
+            .delay(d => 500 * d.fertility_rate)
             .duration(500)
-            .attr("cx", width)
+            //.attr("cx", width)
+            .attr("cx", d => margin.right) 
+
             .remove()
   
         )
