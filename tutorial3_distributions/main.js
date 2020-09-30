@@ -183,9 +183,11 @@ function draw() {
             .attr("cy",  - margin.top) // it will appear by the top  anf from the right to the left 
             //.data(filteredData, d => d.country)
             .transition(t)
-            
+  
             .attr("stroke", "lightgrey")
            .attr("cx", d => margin.right) 
+           .attr("cy",  - margin.top) 
+
            .attr('cx', function(d, i) {
             return i * 200;
           })
@@ -207,7 +209,7 @@ function draw() {
             .delay(d => 500 * d.fertility_rate)
             .duration(500)
             //.attr("cx", width)
-            .attr("cx", d => margin.right) 
+            //.attr("cx", d => margin.right) 
             .attr("cy",  d => margin.top)
             .remove()
   
