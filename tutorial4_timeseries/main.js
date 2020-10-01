@@ -9,16 +9,21 @@ const width = window.innerWidth * 0.7,
 let svg;
 let xScale;
 let yScale;
+let lineFunc;
 
 /* APPLICATION STATE */
 let state = {
   data: [],
-  selection: "All", // + YOUR FILTER SELECTION
+  selection: "All",
 };
 
 /* LOAD DATA */
 // + SET YOUR DATA PATH
-d3.json(YOUR_DATA_PATH, d3.autoType).then(raw_data => {
+d3.csv("../data/populationOverTime.csv", d => ({
+  year: new Date(d.Year, 0, 1),
+  country: d.Entity,
+  population: +d.Population,
+})).then(raw_data => {
   console.log("raw_data", raw_data);
   state.data = raw_data;
   init();
@@ -27,11 +32,6 @@ d3.json(YOUR_DATA_PATH, d3.autoType).then(raw_data => {
 /* INITIALIZING FUNCTION */
 // this will be run *one time* when the data finishes loading in
 function init() {
-  // + SCALES
-
-  // + AXES
-
-  // + UI ELEMENT SETUP
 
   const selectElement = d3.select("#dropdown").on("change", function() {
     // `this` === the selectElement
@@ -44,16 +44,31 @@ function init() {
   // add in dropdown options from the unique values in the data
   selectElement
     .selectAll("option")
-    .data(["All", "1", "2", "3"]) // + ADD DATA VALUES FOR DROPDOWN
+    .data([...new Set(state.data.map(d => d['country']))])
     .join("option")
     .attr("value", d => d)
     .text(d => d);
 
-  // + SET SELECT ELEMENT'S DEFAULT VALUE (optional)
+  // create an svg element in our main `d3-container` element
+  svg = d3
+    .select("#d3-container")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
 
-  // + CREATE SVG ELEMENT
+  xScale = d3
+    .scaleTime()
+    .domain(d3.extent(state.data, d => d.year))
+    .range([margin.left, width - margin.right]);
 
-  // + CALL AXES
+  yScale = d3
+    .scaleLinear()
+    .domain([0, d3.max(state.data, d => d.population)])
+    .range([height - margin.bottom, margin.top]);
+
+  lineFunc = d3.line()
+    .x(d => xScale(d.year))
+    .y(d => yScale(d.population));
 
   draw(); // calls the draw function
 }
@@ -61,21 +76,27 @@ function init() {
 /* DRAW FUNCTION */
 // we call this everytime there is an update to the data/state
 function draw() {
-  // + FILTER DATA BASED ON STATE
-  //
-  // + UPDATE SCALE(S), if needed
-  //
-  // + UPDATE AXIS/AXES, if needed
-  //
-  // + DRAW CIRCLES, if you decide to
-  // const dot = svg
-  //   .selectAll("circle")
-  //   .data(filteredData, d => d.name)
-  //   .join(
-  //     enter => enter, // + HANDLE ENTER SELECTION
-  //     update => update, // + HANDLE UPDATE SELECTION
-  //     exit => exit // + HANDLE EXIT SELECTION
-  //   );
-  //
-  // + DRAW LINE AND AREA
+  
+  let filteredData = [];
+  if (state.selection !== null) {
+    filteredData = state.data.filter(d => d.country === state.selection);
+  }
+  console.log(state.selection, lineFunc(filteredData))
+  const line = svg.selectAll("path.trend")
+    .data([filteredData])
+    .join(enter => enter
+        .append("path")
+        .attr("class", "trend")
+        .attr("opacity", 0)
+        .call(selection =>
+          selection
+            .transition()
+            .duration(1000)
+            .attr("opacity", 1)
+            .attr("d", d => lineFunc(d))
+        ),
+        update => update,
+        exit => exit.remove()
+    )
+
 }
