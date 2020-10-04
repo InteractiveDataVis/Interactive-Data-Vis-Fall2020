@@ -14,7 +14,7 @@ let lineFunc;
 /* APPLICATION STATE */
 let state = {
   data: [],
-  selection: "All",
+  selection: "United States",
 };
 
 /* LOAD DATA */
@@ -49,6 +49,8 @@ function init() {
     .attr("value", d => d)
     .text(d => d);
 
+  selectElement.property("value", "United States")
+
   // create an svg element in our main `d3-container` element
   svg = d3
     .select("#d3-container")
@@ -81,22 +83,25 @@ function draw() {
   if (state.selection !== null) {
     filteredData = state.data.filter(d => d.country === state.selection);
   }
-  console.log(state.selection, lineFunc(filteredData))
+  // console.log(state.selection, lineFunc(filteredData))
   const line = svg.selectAll("path.trend")
     .data([filteredData])
-    .join(enter => enter
+    .join(enter => 
+      enter
         .append("path")
         .attr("class", "trend")
         .attr("opacity", 0)
-        .call(selection =>
-          selection
-            .transition()
-            .duration(1000)
-            .attr("opacity", 1)
-            .attr("d", d => lineFunc(d))
-        ),
-        update => update,
-        exit => exit.remove()
+        .call(sel => sel
+          .transition()
+          .duration(1000)
+          .attr("opacity", 1)
+          .attr("d", d => lineFunc(d))),
+      update => update
+        .call(sel => sel
+        .transition()
+        .duration(1000)
+        .attr("d", d => lineFunc(d))),
+      exit => exit.remove()
     )
 
 }
