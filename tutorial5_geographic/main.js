@@ -1,58 +1,67 @@
-/**
- * CONSTANTS AND GLOBALS
- * */
-const width = window.innerWidth * 0.9,
-  height = window.innerHeight * 0.7,
+/* CONSTANTS AND GLOBALS */
+const width = window.innerWidth * 0.8,
+  height = window.innerHeight * 0.8,
   margin = { top: 20, bottom: 50, left: 60, right: 40 };
-
-/** these variables allow us to access anything we manipulate in
- * init() but need access to in draw().
- * All these variables are empty before we assign something to them.*/
 let svg;
 
-/**
- * APPLICATION STATE
- * */
+
+/* APPLICATION STATE */
 let state = {
-  // + SET UP STATE
+  geojson: null,
+  hover: {
+    latitude: null,
+    longitude: null,
+  },
 };
 
-/**
- * LOAD DATA
- * Using a Promise.all([]), we can load more than one dataset at a time
- * */
+
+/* LOAD DATA */
 Promise.all([
-  d3.json("PATH_TO_YOUR_GEOJSON"),
-  d3.csv("PATH_TO_ANOTHER_DATASET", d3.autoType),
-]).then(([geojson, otherData]) => {
-  // + SET STATE WITH DATA
+  d3.json("../data/usState.json"),
+]).then(([geojson]) => {
+  state.geojson = geojson;
   console.log("state: ", state);
   init();
 });
 
-/**
- * INITIALIZING FUNCTION
- * this will be run *one time* when the data finishes loading in
- * */
+
+/* INITIALIZING FUNCTION */
 function init() {
-  // create an svg element in our main `d3-container` element
-  svg = d3
-    .select("#d3-container")
+
+  const GradCenterCoord = { latitude: 40.7423, longitude: -73.9833 };
+
+  svg = d3.select("#d3-container")
     .append("svg")
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height)
+  
+  const projection = d3.geoAlbersUsa()
+    .fitSize([width, height], state.geojson)
 
-  // + SET UP PROJECTION
-  // + SET UP GEOPATH
+  const geoPathFunc = d3.geoPath(projection)
 
-  // + DRAW BASE MAP PATH
-  // + ADD EVENT LISTENERS (if you want)
+  const usStates = svg.selectAll("path.map-lines")
+    .data(state.geojson.features)
+    .join("path")
+    .attr("class", "map-lines")
+    .attr("d", d => geoPathFunc(d))
+    .attr("fill", "pink")
 
-  draw(); // calls the draw function
+  const dot = svg.append("circle")
+    .attr("r", 10)
+    .style("transform", () => {
+      const proj = projection([GradCenterCoord.longitude, GradCenterCoord.latitude])
+      const x = proj[0]
+      const y = proj[1]
+      // const [x,y] = projection([GradCenterCoord.longitude, GradCenterCoord.latitude])
+      return `translate(${x}px,${y}px)`})
+
+  
+  draw();
 }
 
-/**
- * DRAW FUNCTION
- * we call this everytime there is an update to the data/state
- * */
-function draw() {}
+/* DRAW FUNCTION */
+function draw() {
+
+
+}
