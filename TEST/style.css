@@ -1,0 +1,21 @@
+html{
+    background-image: url("ping.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; 
+    
+  }
+  h1{
+    font-family: 'Times New Roman', Times, serif;
+     color: deeppink;
+     text-align: center;
+     margin-top: 1cm;
+     
+     
+   }
+   h2{
+     font-family: 'Times New Roman', Times, serif;
+ color: rgb(238, 49, 206);
+     margin-top: 1cm;
+     text-align: center;
+   }

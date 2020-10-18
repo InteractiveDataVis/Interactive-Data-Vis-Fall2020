@@ -1,0 +1,41 @@
+svg{
+    background: #efefef;   
+   }
+   .state{
+       fill: #EEEBD0;
+       stroke:#E87EA1;
+       stroke-width: 0.5;
+   }
+   .selected{
+       fill:#92DCE5
+   }
+   .state_label{
+       fill:#E86252;
+       font-size: 10px;
+   }
+   .city-circle{
+       background-color: #bbb;
+       color: teal;
+   }
+   .selected2{
+       fill:#246EB9
+   }
+   .selected1{
+       fill:#127475
+   }
+   h1{
+       font-family: 'Times New Roman', Times, serif;
+       color:	#92DCE5;
+        text-align: center;
+        margin-top: 1cm;
+        
+        
+      }
+      h2{
+        font-family: 'Times New Roman', Times, serif;
+      
+        color: #92DCE5;
+        margin-top: 1cm;
+        text-align: center;
+      }
+   
