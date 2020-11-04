@@ -1,0 +1,153 @@
+Code,Definition,Code_Value,Country,Regional_indicator,Ladder_score,country,latitude,longitude,name
+AF,Afghanistan,4,Afghanistan,South Asia,2.566900015,AF,33.93911,67.709953,Afghanistan
+AL,Albania,8,Albania,Central and Eastern Europe,4.882699966,AL,41.153332,20.168331,Albania
+DZ,Algeria,12,Algeria,Middle East and North Africa,5.005099773,DZ,28.033886,1.659626,Algeria
+AR,Argentina,32,Argentina,Latin America and Caribbean,5.974699974,AR,-38.416097,-63.616672,Argentina
+AM,Armenia,51,Armenia,Commonwealth of Independent States,4.676799774,AM,40.069099,45.038189,Armenia
+AU,Australia,36,Australia,North America and ANZ,7.222799778,AU,-25.274398,133.775136,Australia
+AT,Austria,40,Austria,Western Europe,7.294199944,AT,47.516231,14.550072,Austria
+AZ,Azerbaijan,31,Azerbaijan,Commonwealth of Independent States,5.164800167,AZ,40.143105,47.576927,Azerbaijan
+BH,Bahrain,48,Bahrain,Middle East and North Africa,6.227300167,BH,25.930414,50.637772,Bahrain
+BD,Bangladesh,50,Bangladesh,South Asia,4.832799911,BD,23.684994,90.356331,Bangladesh
+BY,Belarus,112,Belarus,Commonwealth of Independent States,5.539899826,BY,53.709807,27.953389,Belarus
+BE,Belgium,56,Belgium,Western Europe,6.863500118,BE,50.503887,4.469936,Belgium
+BJ,Benin,204,Benin,Sub-Saharan Africa,5.21600008,BJ,9.30769,2.315834,Benin
+BO,Bolivia,68,Bolivia,Latin America and Caribbean,5.747499943,BO,-16.290154,-63.588653,Bolivia
+BA,Bosnia and Herzegovina,70,Bosnia and Herzegovina,Central and Eastern Europe,5.674099922,BA,43.915886,17.679076,Bosnia and Herzegovina
+BW,Botswana,72,Botswana,Sub-Saharan Africa,3.478899956,BW,-22.328474,24.684866,Botswana
+BR,Brazil,76,Brazil,Latin America and Caribbean,6.375599861,BR,-14.235004,-51.92528,Brazil
+BG,Bulgaria,100,Bulgaria,Central and Eastern Europe,5.101500034,BG,42.733883,25.48583,Bulgaria
+BF,Burkina Faso,854,Burkina Faso,Sub-Saharan Africa,4.768700123,BF,12.238333,-1.561593,Burkina Faso
+BI,Burundi,108,Burundi,Sub-Saharan Africa,3.775300026,BI,-3.373056,29.918886,Burundi
+KH,Cambodia,116,Cambodia,Southeast Asia,4.848400116,KH,12.565679,104.990963,Cambodia
+CM,Cameroon,120,Cameroon,Sub-Saharan Africa,5.084899902,CM,7.369722,12.354722,Cameroon
+CA,Canada,124,Canada,North America and ANZ,7.23210001,CA,56.130366,-106.346771,Canada
+CF,Central African Republic,140,Central African Republic,Sub-Saharan Africa,3.475899935,CF,6.611111,20.939444,Central African Republic
+TD,Chad,148,Chad,Sub-Saharan Africa,4.422699928,TD,15.454166,18.732207,Chad
+CL,Chile,152,Chile,Latin America and Caribbean,6.228499889,CL,-35.675147,-71.542969,Chile
+CN,China,156,China,East Asia,5.123899937,CN,35.86166,104.195397,China
+CC,Cocos (Keeling) Islands,166,Colombia,Latin America and Caribbean,6.163400173,CO,4.570868,-74.297333,Colombia
+CO,Colombia,170,Comoros,Sub-Saharan Africa,4.288599968,KM,-11.875001,43.872219,Comoros
+CG,Congo,178,Congo (Brazzaville),Sub-Saharan Africa,5.194399834,CD,-4.038333,21.758664,Congo [DRC]
+CD,"Congo, The Democratic Republic of ",180,Congo (Kinshasa),Sub-Saharan Africa,4.31099987,CG,-0.228021,15.827659,Congo [Republic]
+CR,Costa Rica,188,Costa Rica,Latin America and Caribbean,7.121399879,CR,9.748917,-83.753428,Costa Rica
+CI,Cote d'Ivoire,384,cote d ivoire,Sub-Saharan Africa,5.233300209,CI,7.539989,-5.54708,C�te d'Ivoire
+HR,Croatia,191,Croatia,Central and Eastern Europe,5.504700184,HR,45.1,15.2,Croatia
+CY,Cyprus,196,Cyprus,Western Europe,6.15899992,CY,35.126413,33.429859,Cyprus
+CZ,Czechia,203,Czech Republic,Central and Eastern Europe,6.910900116,CZ,49.817492,15.472962,Czech Republic
+DK,Denmark,208,Denmark,Western Europe,7.645599842,DK,56.26392,9.501785,Denmark
+DO,Dominican Republic,214,Dominican Republic,Latin America and Caribbean,5.689199924,DO,18.735693,-70.162651,Dominican Republic
+EC,Ecuador,218,Ecuador,Latin America and Caribbean,5.925199986,EC,-1.831239,-78.183406,Ecuador
+EG,Egypt,818,Egypt,Middle East and North Africa,4.151400089,EG,26.820553,30.802498,Egypt
+SV,El Salvador,222,El Salvador,Latin America and Caribbean,6.34829998,SV,13.794185,-88.89653,El Salvador
+EE,Estonia,233,Estonia,Central and Eastern Europe,6.021800041,EE,58.595272,25.013607,Estonia
+ET,Ethiopia,231,Ethiopia,Sub-Saharan Africa,4.186200142,ET,9.145,40.489673,Ethiopia
+FI,Finland,246,Finland,Western Europe,7.808700085,FI,61.92411,25.748151,Finland
+FR,France,250,France,Western Europe,6.663799763,FR,46.227638,2.213749,France
+GA,Gabon,266,Gabon,Sub-Saharan Africa,4.829299927,GA,-0.803689,11.609444,Gabon
+GM,Gambia,270,Gambia,Sub-Saharan Africa,4.750599861,GM,13.443182,-15.310139,Gambia
+GE,Georgia,268,Georgia,Commonwealth of Independent States,4.672599792,GE,42.315407,43.356892,Georgia
+DE,Germany,276,Germany,Western Europe,7.075799942,DE,51.165691,10.451526,Germany
+GH,Ghana,288,Ghana,Sub-Saharan Africa,5.147999763,GH,7.946527,-1.023194,Ghana
+GR,Greece,300,Greece,Western Europe,5.514999866,GR,39.074208,21.824312,Greece
+GT,Guatemala,320,Guatemala,Latin America and Caribbean,6.398900032,GT,15.783471,-90.230759,Guatemala
+GG,Guernsey,831,Guinea,Sub-Saharan Africa,4.949299812,GN,9.945587,-9.696645,Guinea
+HT,Haiti,332,Haiti,Latin America and Caribbean,3.720799923,HT,18.971187,-72.285215,Haiti
+HN,Honduras,340,Honduras,Latin America and Caribbean,5.953199863,HN,15.199999,-86.241905,Honduras
+HK,Hong Kong,344,Hong Kong S.A.R. of China,East Asia,5.510399818,HK,22.396428,114.109497,Hong Kong
+HU,Hungary,348,Hungary,Central and Eastern Europe,6.000400066,HU,47.162494,19.503304,Hungary
+IS,Iceland,352,Iceland,Western Europe,7.504499912,IS,64.963051,-19.020835,Iceland
+IN,India,356,India,South Asia,3.573299885,IN,20.593684,78.96288,India
+ID,Indonesia,360,Indonesia,Southeast Asia,5.285600185,ID,-0.789275,113.921327,Indonesia
+IR,"Iran, Islamic Republic of",364,Iran,Middle East and North Africa,4.672399998,IR,32.427908,53.688046,Iran
+IQ,Iraq,368,Iraq,Middle East and North Africa,4.784800053,IQ,33.223191,43.679291,Iraq
+IE,Ireland,372,Ireland,Western Europe,7.093699932,IE,53.41291,-8.24389,Ireland
+IL,Israel,376,Israel,Middle East and North Africa,7.128600121,IL,31.046051,34.851612,Israel
+IT,Italy,380,Italy,Western Europe,6.38740015,IT,41.87194,12.56738,Italy
+JM,Jamaica,388,Jamaica,Latin America and Caribbean,5.889800072,JM,18.109581,-77.297508,Jamaica
+JP,Japan,392,Japan,East Asia,5.870800018,JP,36.204824,138.252924,Japan
+JO,Jordan,400,Jordan,Middle East and North Africa,4.633399963,JO,30.585164,36.238414,Jordan
+KZ,Kazakstan,398,Kazakhstan,Commonwealth of Independent States,6.057899952,KZ,48.019573,66.923684,Kazakhstan
+KE,Kenya,404,Kenya,Sub-Saharan Africa,4.583000183,KE,-0.023559,37.906193,Kenya
+XK,Kosovo (temporary code),926,Kosovo,Central and Eastern Europe,6.325200081,XK,42.602636,20.902977,Kosovo
+KW,Kuwait,414,Kuwait,Middle East and North Africa,6.102099895,KW,29.31166,47.481766,Kuwait
+KG,Kyrgyzstan,417,Kyrgyzstan,Commonwealth of Independent States,5.541500092,KG,41.20438,74.766098,Kyrgyzstan
+LA,"Lao, People's Democratic Republic",418,Laos,Southeast Asia,4.888599873,LA,19.85627,102.495496,Laos
+LV,Latvia,428,Latvia,Central and Eastern Europe,5.949999809,LV,56.879635,24.603189,Latvia
+LB,Lebanon,422,Lebanon,Middle East and North Africa,4.771500111,LB,33.854721,35.862285,Lebanon
+LS,Lesotho,426,Lesotho,Sub-Saharan Africa,3.652800083,LS,-29.609988,28.233608,Lesotho
+LR,Liberia,430,Liberia,Sub-Saharan Africa,4.557899952,LR,6.428055,-9.429499,Liberia
+LY,Libyan Arab Jamahiriya,434,Libya,Middle East and North Africa,5.488800049,LY,26.3351,17.228331,Libya
+LI,Liechtenstein,438,Lithuania,Central and Eastern Europe,6.215499878,LT,55.169438,23.881275,Lithuania
+LT,Lithuania,440,Luxembourg,Western Europe,7.237500191,LU,49.815273,6.129583,Luxembourg
+MK,"Macedonia, The Former Yugoslav Republic Of",807,Macedonia,Central and Eastern Europe,5.159800053,MK,41.608635,21.745275,Macedonia [FYROM]
+MG,Madagascar,450,Madagascar,Sub-Saharan Africa,4.165599823,MG,-18.766947,46.869107,Madagascar
+MW,Malawi,454,Malawi,Sub-Saharan Africa,3.538000107,MW,-13.254308,34.301525,Malawi
+MY,Malaysia,458,Malaysia,Southeast Asia,5.384300232,MY,4.210484,101.975766,Malaysia
+MV,Maldives,462,Maldives,South Asia,5.197599888,MV,3.202778,73.22068,Maldives
+ML,Mali,466,Mali,Sub-Saharan Africa,4.729300022,ML,17.570692,-3.996166,Mali
+MT,Malta,470,Malta,Western Europe,6.772799969,MT,35.937496,14.375416,Malta
+MR,Mauritania,478,Mauritania,Sub-Saharan Africa,4.374599934,MR,21.00789,-10.940835,Mauritania
+MU,Mauritius,480,Mauritius,Sub-Saharan Africa,6.101299763,MU,-20.348404,57.552152,Mauritius
+MX,Mexico,484,Mexico,Latin America and Caribbean,6.465000153,MX,23.634501,-102.552784,Mexico
+MD,"Moldova, Republic of",498,Moldova,Commonwealth of Independent States,5.607500076,MD,47.411631,28.369885,Moldova
+MN,Mongolia,496,Mongolia,East Asia,5.456200123,MC,43.750298,7.412841,Monaco
+ME,Montenegro,499,Montenegro,Central and Eastern Europe,5.54610014,MN,46.862496,103.846656,Mongolia
+MA,Morocco,504,Morocco,Middle East and North Africa,5.094799995,MA,31.791702,-7.09262,Morocco
+MZ,Mozambique,508,Mozambique,Sub-Saharan Africa,4.623600006,MZ,-18.665695,35.529562,Mozambique
+MM,Myanmar,104,Myanmar,Southeast Asia,4.308000088,MM,21.913965,95.956223,Myanmar [Burma]
+NA,Namibia,516,Namibia,Sub-Saharan Africa,4.571100235,NA,-22.95764,18.49041,Namibia
+NP,Nepal,524,Nepal,South Asia,5.137199879,NP,28.394857,84.124008,Nepal
+NL,Netherlands,528,Netherlands,Western Europe,7.448900223,NL,52.132633,5.291266,Netherlands
+NZ,New Zealand,554,New Zealand,North America and ANZ,7.299600124,NZ,-40.900557,174.885971,New Zealand
+NI,Nicaragua,558,Nicaragua,Latin America and Caribbean,6.13710022,NI,12.865416,-85.207229,Nicaragua
+NE,Niger,562,Niger,Sub-Saharan Africa,4.909599781,NE,17.607789,8.081666,Niger
+NG,Nigeria,566,Nigeria,Sub-Saharan Africa,4.724100113,NG,9.081999,8.675277,Nigeria
+NF,Norfolk Island,574,North Cyprus,Western Europe,5.53550005,NF,-29.040835,167.954712,Norfolk Island
+NO,Norway,578,Norway,Western Europe,7.487999916,NO,60.472024,8.468946,Norway
+PK,Pakistan,586,Pakistan,South Asia,5.69329977,PK,30.375321,69.345116,Pakistan
+PS,"Palestinian Territory, Occupied",275,Palestinian Territories,Middle East and North Africa,4.552800179,PS,31.952162,35.233154,Palestinian Territories
+PA,Panama,591,Panama,Latin America and Caribbean,6.304800034,PA,8.537981,-80.782127,Panama
+PY,Paraguay,600,Paraguay,Latin America and Caribbean,5.692100048,PY,-23.442503,-58.443832,Paraguay
+PE,Peru,604,Peru,Latin America and Caribbean,5.796800137,PE,-9.189967,-75.015152,Peru
+PH,Philippines,608,Philippines,Southeast Asia,6.006000042,PH,12.879721,121.774017,Philippines
+PL,Poland,616,Poland,Central and Eastern Europe,6.186299801,PL,51.919438,19.145136,Poland
+PT,Portugal,620,Portugal,Western Europe,5.910900116,PT,39.399872,-8.224454,Portugal
+RO,Romania,642,Romania,Central and Eastern Europe,6.123700142,RO,45.943161,24.96676,Romania
+RU,Russia Federation,643,Russia,Commonwealth of Independent States,5.546000004,RU,61.52401,105.318756,Russia
+RW,Rwanda,646,Rwanda,Sub-Saharan Africa,3.312299967,RW,-1.940278,29.873888,Rwanda
+SA,Saudi Arabia,682,Saudi Arabia,Middle East and North Africa,6.406499863,SA,23.885942,45.079162,Saudi Arabia
+SN,Senegal,686,Senegal,Sub-Saharan Africa,4.980800152,SN,14.497401,-14.452362,Senegal
+RS,Serbia,688,Serbia,Central and Eastern Europe,5.77820015,RS,44.016521,21.005859,Serbia
+SL,Sierra Leone,694,Sierra Leone,Sub-Saharan Africa,3.926399946,SL,8.460555,-11.779889,Sierra Leone
+SG,Singapore,702,Singapore,Southeast Asia,6.377099991,SG,1.352083,103.819836,Singapore
+SK,Slovakia,703,Slovakia,Central and Eastern Europe,6.280600071,SK,48.669026,19.699024,Slovakia
+SI,Slovenia,705,Slovenia,Central and Eastern Europe,6.363399982,SI,46.151241,14.995463,Slovenia
+ZA,South Africa,710,South Africa,Sub-Saharan Africa,4.814099789,ZA,-30.559482,22.937506,South Africa
+ES,Spain,724,Spain,East Asia,5.872399807,ES,40.463667,-3.74922,Spain
+LK,Sri Lanka,144,Sri Lanka,Western Europe,6.400899887,LK,7.873054,80.771797,Sri Lanka
+SD,Sudan,736,Sudan,Sub-Saharan Africa,2.816600084,SZ,12.862807,30.217636,Sudan
+SZ,Swaziland,748,Swaziland,Sub-Saharan Africa,4.308100224,SE,-26.522503,31.465866,Swaziland
+SE,Sweden,752,Sweden,Western Europe,7.353499889,CH,60.128161,18.643501,Sweden
+CH,Switzerland,756,Switzerland,Western Europe,7.559899807,TW,46.818188,8.227512,Switzerland
+TW,"Taiwan, Province of China",158,Taiwan Province of China,East Asia,6.45539999,TJ,23.69781,120.960515,Taiwan
+TJ,Tajikistan,762,Tajikistan,Commonwealth of Independent States,5.555699825,TZ,38.861034,71.276093,Tajikistan
+TZ,"Tanzania, United Republic of",834,Tanzania,Sub-Saharan Africa,3.476200104,TH,-6.369028,34.888822,Tanzania
+TH,Thailand,764,Thailand,Southeast Asia,5.998799801,TG,15.870032,100.992541,Thailand
+TG,Togo,768,Togo,Sub-Saharan Africa,4.187200069,TT,8.619543,0.824782,Togo
+TT,Trinidad and Tobago,780,Trinidad and Tobago,Latin America and Caribbean,6.191899776,TN,10.691803,-61.222503,Trinidad and Tobago
+TN,Tunisia,788,Tunisia,Middle East and North Africa,4.392199993,TR,33.886917,9.537499,Tunisia
+TR,Turkey,792,Turkey,Middle East and North Africa,5.131800175,TM,38.963745,35.243322,Turkey
+TM,Turkmenistan,795,Turkmenistan,Commonwealth of Independent States,5.119100094,UG,38.969719,59.556278,Turkmenistan
+UG,Uganda,800,Uganda,Sub-Saharan Africa,4.43200016,UA,1.373333,32.290275,Uganda
+UA,Ukraine,804,Ukraine,Commonwealth of Independent States,4.56069994,AE,48.379433,31.16558,Ukraine
+AE,United Arab Emirates,784,United Arab Emirates,Middle East and North Africa,6.790800095,GB,23.424076,53.847818,United Arab Emirates
+GB,United Kingdom,826,United Kingdom,Western Europe,7.164500237,US,55.378051,-3.435973,United Kingdom
+US,United States,840,United States,North America and ANZ,6.939599991,UY,37.09024,-95.712891,United States
+UY,Uruguay,858,Uruguay,Latin America and Caribbean,6.440100193,UZ,-32.522779,-55.765835,Uruguay
+UZ,Uzbekistan,860,Uzbekistan,Commonwealth of Independent States,6.257599831,VE,41.377491,64.585262,Uzbekistan
+VE,Venezuela,862,Venezuela,Latin America and Caribbean,5.053199768,VN,6.42375,-66.58973,Venezuela
+VN,Vietnam,704,Vietnam,Southeast Asia,5.353499889,YE,14.058324,108.277199,Vietnam
+YE,Yemen,887,Yemen,Middle East and North Africa,3.527400017,ZM,15.552727,48.516388,Yemen
+ZM,Zambia,894,Zambia,Sub-Saharan Africa,3.759399891,ZW,-13.133897,27.849332,Zambia
+ZW,Zimbabwe,716,Zimbabwe,Sub-Saharan Africa,3.299200058,,-19.015438,29.154857,Zimbabwe

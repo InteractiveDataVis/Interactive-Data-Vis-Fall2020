@@ -1,0 +1,54 @@
+svg{
+    background: #efefef;   
+   }
+   .state{
+       fill: #fde090;
+       stroke:#F55536;
+       stroke-width: 0.5;
+   }
+   .state:hover{
+       fill:#F5BB00;
+}
+
+   .selected{
+       fill:#F77F00;
+   }
+   .state_label{
+       fill:#E86252;
+       font-size: 10px;
+   }
+   .city-circle{
+       background-color: #bbb;
+       color:#F55536;
+   }
+   .selected2{
+       fill:#EC7357;
+   }
+   .selected1{
+       fill:#003049;
+   }
+   
+   h1{
+       font-family: 'Times New Roman', Times, serif;
+       color:	#FFB30F;
+        text-align: center;
+        margin-top: 1cm;
+        
+        
+      }
+      h3{
+        font-family: 'Times New Roman', Times, serif;
+        color:	#EFD28D;
+         margin-top: 1cm;
+         
+         
+       }
+ 
+      h2{
+        font-family: 'Times New Roman', Times, serif;
+      
+        color: #FFB30F;
+        margin-top: 1cm;
+        text-align: center;
+      }
+   
