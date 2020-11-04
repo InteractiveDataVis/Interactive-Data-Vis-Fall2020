@@ -102,11 +102,11 @@ svg.selectAll(".city-circle")
             d3.select(this).classed("selected1",true)// add the cllas of selected  to the elemenent hase been clicked
         })
         
-
-svg.selectAll(".state_label")
+svg.selectAll(".state_label") // we hace the starting condition enter (0)
 .data(state.dataheat)
 .enter().append("text")
 .attr("class","state_label")
+.transition().duration(1000) // and we have what we want to do transiition to in the othe r exemple we tart with h 0 and we did transition to the good height 
 .attr("x",function (d){
     var coords = projection([d.Longitude,d.Latitude])
    console.log(coords)
@@ -119,22 +119,12 @@ svg.selectAll(".state_label")
     //console.log(coords)
    return coords[1];
 })
-.on('mouseover',function(d){
-    console.log(d)
-  // d3.select(this).atrr("fill","yellow")// overriden by css
-  // add class selected 
-    d3.select(this).classed("selected2",true)// add the cllas of selected  to the elemenent hase been clicked
-})
-.on('mouseout',function(d){
-  console.log(d)
-// d3.select(this).atrr("fill","yellow")// overriden by css
-  d3.select(this).classed("selected2",false)// add the cllas of selected  to the elemenent hase been clicked
-})
 .text(function(d){
-    return d.City
+    return d.City // arevoir
 })
 .attr("dx",5)
 .attr("dy",6)
-          
+//.transition().duration(500)
+//.remove()          
         
         }

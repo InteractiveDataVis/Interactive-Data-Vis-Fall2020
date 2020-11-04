@@ -1,0 +1,122 @@
+/* style.css */
+.region.republic {
+	fill: #fee391;
+	stroke: #333;
+	stroke-width: 1px;
+}
+.active
+	{fill: #f29929;
+}
+.hover
+	{fill: #fee391;
+}
+.highlight
+	{fill: #fec44f;
+}
+
+.region.NI { 
+  fill: #aaa;
+  stroke: #aaa;
+}
+
+rect {
+    fill: none;
+    pointer-events: all;
+}
+
+/* Colors taken from colorbrewer2.org - blue */
+.b0-9 { fill:rgb(247,251,255); }
+.b1-9 { fill:rgb(222,235,247); }
+.b2-9 { fill:rgb(198,219,239); }
+.b3-9 { fill:rgb(158,202,225); }
+.b4-9 { fill:rgb(107,174,214); }
+.b5-9 { fill:rgb(66,146,198); }
+.b6-9 { fill:rgb(33,113,181); }
+.b7-9 { fill:rgb(8,81,156); }
+.b8-9 { fill:rgb(8,48,107); }
+
+/* Colors taken from colorbrewer2.org - red */
+.r0-9 { fill:rgb(255,245,240); }
+.r1-9 { fill:rgb(254,224,210); }
+.r2-9 { fill:rgb(252,187,161); }
+.r3-9 { fill:rgb(252,146,114); }
+.r4-9 { fill:rgb(251,106,74); }
+.r5-9 { fill:rgb(239,59,44); }
+.r6-9 { fill:rgb(203,24,29); }
+.r7-9 { fill:rgb(165,15,21); }
+.r8-9 { fill:rgb(103,0,13); }
+
+/* Colors taken from colorbrewer2.org - green */
+.g0-9 { fill:rgb(247,252,245); }
+.g1-9 { fill:rgb(229,245,224); }
+.g2-9 { fill:rgb(199,233,192); }
+.g3-9 { fill:rgb(161,217,155); }
+.g4-9 { fill:rgb(116,196,118); }
+.g5-9 { fill:rgb(65,171,93); }
+.g6-9 { fill:rgb(35,139,69); }
+.g7-9 { fill:rgb(0,109,44); }
+.g8-9 { fill:rgb(0,68,27); }
+
+.text { stroke:#333;
+	text-anchor: middle;
+	font-family: "sans-serif";
+	stroke-width: 0.5;
+	fill: #333;
+	font-size: 10pt;
+	}
+
+
+.csvTable table {
+border-collapse: collapse;
+text-align: left;
+width: 100%;
+}
+
+.csvTable {
+font: normal 12px/120% Arial, Helvetica, sans-serif;
+background: #fff;
+overflow: hidden;
+border: 1px solid #063;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+.csvTable table td, .csvTable table th {
+padding: 3px 10px;
+}
+
+.csvTable table thead th {
+background: 0;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699',endColorstr='#00557F');
+background-color: #006D2C;
+color: #FFF;
+font-size: 15px;
+font-weight: 700;
+border-left: 1px solid #0070A8;
+}
+
+.csvTable table thead th:first-child {
+    border: none;
+}
+
+.csvTable table tbody td {
+color: #006633; /* #00496B */
+border-left: 1px solid #E1EEF4;
+font-size: 12px;
+border-bottom: 1px solid #E1EEF4;
+font-weight: 400;
+}
+
+.csvTable table tbody td:first-child {
+    border-left: none;
+}
+
+.csvTable table tbody tr:last-child td {
+border-bottom: none;
+}
+
+.csvTable tr:hover td {
+background-color: #063;
+color: white;
+}
