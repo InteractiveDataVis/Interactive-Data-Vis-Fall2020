@@ -1,0 +1,28 @@
+html{
+    background-image: url("fertility2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; 
+    
+  }
+ 
+
+h1{
+   font-family: 'Times New Roman', Times, serif;
+    color: deeppink;
+    text-align: center;
+    margin-top: 1cm;
+    
+    
+  }
+  h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: darkslateblue;
+    margin-top: 1cm;
+    text-align: center;
+  }
+  p{
+    font-family: arial;
+    color: lightpink;
+  }
+ 

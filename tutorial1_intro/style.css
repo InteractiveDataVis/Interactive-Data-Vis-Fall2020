@@ -1,0 +1,70 @@
+th,td {
+    color: black;
+    font-family: verdana;
+    border: 1px solid black;
+  width: 7cm;
+  padding: 5px 25px 4px 25px;
+  }
+  th{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgba(256,256,256,0.4);}
+ .highlight {
+   background: #55cfff;
+ }
+  td{border:0.5px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+  background:honeydew;}
+ .highlight {
+   background:#ff0;
+ }
+   tr{
+    color: red;
+    font-family: courier;
+    border: 1px solid black;
+  }
+  table {
+    border: 1px solid black;
+    scroll-behavior: smooth;
+    margin-left: 200px;
+  margin-right: center;
+    width:auto;
+    text-align: center;
+    align-self: center;
+    display :inline-block;
+   margin-top: 1cm;
+}
+tbody {
+font-family: Arial, Helvetica, sans-serif;
+  height: 300px;
+  display :inline-block;
+  overflow: auto;
+}
+
+html{
+    background-image: url("fertility2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; 
+    
+  }
+ 
+
+h1{
+   font-family: 'Times New Roman', Times, serif;
+    color: deeppink;
+    text-align: center;
+    margin-top: 1cm;
+    
+    
+  }
+  h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: darkslateblue;
+    margin-top: 1cm;
+    text-align: center;
+  }
+  p{
+    font-family: arial;
+    color: lightpink;
+  }
+ 
